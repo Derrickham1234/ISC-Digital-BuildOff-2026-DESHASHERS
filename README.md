@@ -2,107 +2,86 @@
 
 **A centralised digital notice platform for the University of Eastern Africa, Baraton**
 
-**Theme:** Campus Problems: Notice Board / Communication (UEAB ISC Digital Build-Off 2026)
+**Theme:** Campus Problems: Notices and Communication (ISC Digital Build-Off 2026)
+**Team:** DESHASHERS
 **Status:** Working prototype
-**Repository:** [ADD GITHUB LINK]
-**Demo video / live link (optional):** [ADD LINK]
+**Repository:** https://github.com/Derrickham1234/ISC-Digital-BuildOff-2026-DESHASHERS
+**Live demo / demo video:** FILL: paste a link, or delete this line
 
 ---
 
-## 1. Team
+## 1. Project Title and Team
 
 | Name | Registration No. | Role |
-|------|------------------|------|
-| Derrick Okoro | SOKODE2311 | Backend developer |
+| ---- | ---------------- | ---- |
+| Derrick Okoro (**Team Leader**) | SOKODE2311 | Backend developer |
 | Sharon Umutesi | SSHAUM2411 | Frontend and UX |
-| Sheldon Kasera | SSHEKA2311 |  Research, documentation, pitch |
+| Sheldon Kasera | SSHEKA2311 | Research, documentation, pitch |
 
-**Team name:** DESHASHERS  **Contact:** [sokode2311@ueab.ac.ke, sshaum2411@ueab.ac.ke, ssheka2311@ueab.ac.ke.]
+Contact: sokode2311@ueab.ac.ke, sshaum2411@ueab.ac.ke, ssheka2311@ueab.ac.ke
 
 ---
 
 ## 2. Problem Statement and Research
 
-Notices at UEAB reach students through scattered channels: email, WhatsApp
-groups, class representatives, lecturers and physical notice boards. Students
-miss important information, cannot tell which notices apply to them, and
-receive some announcements too late.
+Notices at UEAB reach students through scattered channels: physical notice boards, class announcements, WhatsApp groups and email. This causes three problems:
+
+1. **Missed information:** students overlook exam changes, deadlines and events.
+2. **Unclear relevance:** students cannot easily tell which notices apply to them.
+3. **Late or buried notices:** announcements get lost among other messages or arrive too late.
 
 ### Method
-- Online student survey: **43 responses** (10–11 Nov 2026) across four schools:
-  Business (17), Education, Humanities and Social Sciences (10), Science and
-  Technology (9) and Nursing and Health Sciences (7). Raw anonymised data:
-  `docs/research/survey_responses.csv`
-- Three stakeholder interviews (table below)
+- Online student survey: **43 responses** (10 to 11 November 2026) from four schools: Business (17), Education, Humanities and Social Sciences (10), Science and Technology (9), and Nursing and Health Sciences (7). Raw data: [`docs/research/survey_responses.csv`](docs/research/survey_responses.csv)
+- Three stakeholder interviews. Notes: [`docs/research/interview_notes.md`](docs/research/interview_notes.md)
 
 ### Key survey findings
-- **93%** (40/43) have missed an announcement at least once; **67%** (29/43)
-  miss announcements "sometimes" or "frequently".
-- Only **23%** check university email several times a day; **56%** check it a
-  few times a week or less.
-- **88%** (38/43) attended a physical meeting they felt could have been a
-  digital announcement.
-- **98%** (42/43) said a centralised platform would be useful (74% Yes, 23% Maybe).
-- Most requested features: department-specific notices, urgent highlighting,
-  academic-year targeting, notifications and clear deadlines.
-
-
-### Limitations
-Convenience sample; Business students are over-represented (40%).
+- **93%** (40 of 43) have missed an announcement at least once; **67%** (29 of 43) miss announcements "sometimes" or "frequently".
+- Only **23%** (10 of 43) check university email several times a day.
+- **88%** (38 of 43) attended a physical meeting or appointment they felt could have been a digital announcement.
+- **98%** (42 of 43) said a centralised platform would be useful (32 Yes, 10 Maybe, 1 No).
+- Most requested features: department-specific notices, urgent highlighting, academic-year targeting, notifications and clear deadlines.
 
 ### Interviews
-| # | Interviewee | Key Pain Point | Insight |
-|---|---|---|---|
-| 1 | Student, Year 4, School of Business | Important announcements get buried in WhatsApp groups. | Centralize announcements for easier access. |
-| 2 | Lecturer / Department Staff | Repeatedly communicating the same information across different channels is time-consuming. | Provide a single platform for publishing and targeting departmental announcements. |
-| 3 | University Administrator | Ensuring important announcements reach their intended audiences can be challenging. | Introduce centralized publishing, targeted distribution and clear notice visibility. |
 
-**Current Channels and Their Performance:**
+| # | Interviewee | Key pain point | Insight |
+|---|-------------|----------------|---------|
+| 1 | Student, Year 4, School of Business | Important announcements get buried in WhatsApp groups. | Centralise announcements for easier access. |
+| 2 | Lecturer / department staff | Repeating the same information across channels is time-consuming. | Provide one platform for publishing departmental announcements. |
+| 3 | University administrator | Ensuring notices reach the intended audience is difficult. | Centralised publishing and clear notice visibility. |
 
-UEAB uses university email, WhatsApp groups, student representatives, lecturers and physical notice boards to communicate announcements. However, information is sometimes overlooked, delayed or scattered across these channels. In our survey, **64.3% of respondents sometimes or frequently miss important announcements**, while **97.6% expressed interest in or openness to a centralized digital platform**.
+### Limitations
+Convenience sample; Business students make up 40% of responses.
 
 ---
 
-## 3. Objectives
+## 3. Proposed Solution
 
-1. **Centralize university announcements:** Provide one accessible digital platform for official announcements from different university departments.
+UEAB Smart Noticeboard gives the university one searchable place for official announcements.
 
-2. **Simplify announcement management:** Enable authorized staff to create, categorize, prioritize and manage announcements targeted at specific departments and academic years.
-
-3. **Improve student access to information:** Enable students to view, search and filter relevant announcements while easily identifying urgent and important notices.
-
-## 4. Key Features
-
-### Administrator
-- Secure administrator login and dashboard
+**Administrator**
+- Secure login and dashboard
 - Create, edit and delete notices
 - Publish or save as draft
 - Notice management statistics
 
-### Student
+**Student**
 - Registration, login and dashboard
-- View published announcements and read individual notices
+- View published notices and read individual notices
 - Search notices by title or content
 
-### Security
-- Password hashing
-- Session-based authentication
-- Role-based access control
-- Prepared SQL statements
-- Protected administrator pages
+**Security**
+- Password hashing, session-based authentication, role-based access control, prepared SQL statements, protected administrator pages
 
+---
 
+## 4. System Design
 
-## 5. Technical Architecture
+- **ERD:** [`database/ERD.md`](database/ERD.md)
+- **Use case diagram:** [`docs/use_case.md`](docs/use_case.md)
+- **Data flow diagram (level 0):** [`docs/dfd_level0.md`](docs/dfd_level0.md)
+- **Wireframes:** [`docs/wireframes/`](docs/wireframes/)
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| Frontend | HTML, CSS, JavaScript | Pages and interactions |
-| Backend | PHP | Server-side logic, authentication |
-| Database | MySQL | Data storage |
-| Environment | XAMPP, VS Code | Local development |
-
-**How a notice flows:**
+**How a notice flows**
 
 ```
 Administrator logs in -> creates notice (title, content, category, status)
@@ -111,50 +90,96 @@ Student logs in -> opens dashboard / searches
    -> PHP queries published notices -> results displayed
 ```
 
-### Database Design
+---
 
-- **users:** administrator and student accounts, hashed passwords, roles
-- **categories:** notice categories (Academic, Events, Examinations, etc.)
-- **notices:** title, content, category, author (administrator), publication status
+## 5. Technology Stack
+
+| Layer | Technology |
+| ----- | ---------- |
+| Frontend | HTML, CSS, JavaScript |
+| Backend | PHP |
+| Database | MySQL |
+| Tools | XAMPP, phpMyAdmin, VS Code, Git and GitHub |
 
 ---
 
-## 6. Setup and Installation
+## 6. Screenshots / Demo
 
-**Requirements:** XAMPP (Apache and MySQL), a web browser, Visual Studio Code (optional)
+| Page | Screenshot |
+|------|------------|
+| Login | ![Login](screenshots/01-login.png) |
+| Student dashboard | ![Student dashboard](screenshots/02-student-dashboard.png) |
+| Reading a notice | ![Notice](screenshots/03-notice-view.png) |
+| Admin dashboard | ![Admin dashboard](screenshots/04-admin-dashboard.png) |
+| Create notice | ![Create notice](screenshots/05-create-notice.png) |
 
-1. Install XAMPP and start **Apache** and **MySQL** in the control panel.
-2. Copy the project folder to `C:\xampp\htdocs\`.
-3. Open `http://localhost/phpmyadmin`, create a database named `[DATABASE NAME]`, and import `database/ueab_noticeboard.sql`.
-4. Check the database settings in `config/db.php` (default XAMPP: host `localhost`, user `root`, empty password).
-5. Create the administrator account: [EXPLAIN EXACTLY, e.g. run `admin/setup.php` once, or use the seeded login below].
-6. Open `http://localhost/UEAB_Smart_Noticeboard/`.
+---
 
-**Demo credentials (testing only):**
+## 7. How to Run the Project
+
+**Requirements:** XAMPP (Apache and MySQL), a web browser.
+
+1. Install XAMPP and start **Apache** and **MySQL** in the XAMPP control panel.
+2. Download or clone this repository. Copy the whole folder into `C:\xampp\htdocs\` (for example `C:\xampp\htdocs\noticeboard`).
+3. Open `http://localhost/phpmyadmin`. Click **New**, create a database named `FILL_DATABASE_NAME`, then open it, click **Import**, choose `database/ueab_smart_noticeboard.sql` and click **Go**.
+4. Open `src/db.php` and confirm the settings (default XAMPP: host `localhost`, user `root`, empty password, database `FILL_DATABASE_NAME`).
+5. Open `http://localhost/noticeboard/src/` in your browser.
+
+**Demo accounts (testing only)**
 
 | Role | Email / username | Password |
 |------|------------------|----------|
-| Administrator | [ADD] | [ADD] |
-| Student | [ADD or "register a new account"] | [ADD] |
-
-### Project Structure
-
-```text
-UEAB_Smart_Noticeboard/
-├── admin/        Administrator pages
-├── student/      Student pages
-├── config/       Database configuration
-├── css/          Stylesheets
-├── js/           Client-side scripts
-├── database/     SQL import file
-├── docs/         Business model and pitch slides
-├── index.php  login.php  register.php  logout.php
-└── README.md
-```
+| Administrator | FILL | FILL |
+| Student | Register a new account on the register page | your choice |
 
 ---
 
-## 7. Testing
+## 8. Business Model Summary
 
-### Functional testing
-The following functions were manually tested: student registration,
+Free for students; sustained by the University (ICT or Student Affairs) as an official communication tool, hosted on the university server or low-cost shared hosting. Adoption: pilot with one school and class representatives, departments publish official notices there first, BITSA promotion and QR codes on existing notice boards. Full detail: [`docs/Business_Model.pdf`](docs/Business_Model.pdf)
+
+---
+
+## 9. Testing and User Feedback
+
+**Functional testing:** manually tested registration, login and logout, role-based access (a student cannot open admin pages), create, edit and delete notice, draft versus published, and search.
+
+**User testing (at least two real users):**
+
+| Tester | Role | What they said | What we changed |
+|--------|------|----------------|-----------------|
+| FILL | FILL | FILL | FILL |
+| FILL | FILL | FILL | FILL |
+
+---
+
+## 10. Contributions
+
+| Member | Contribution |
+|--------|--------------|
+| Derrick Okoro | Backend: PHP logic, database, authentication and security |
+| Sharon Umutesi | Frontend: pages, styling, user experience |
+| Sheldon Kasera | Survey and interviews, documentation, business model, pitch |
+
+---
+
+## 11. Future Improvements and Conclusion
+
+Based on the survey, next we would build:
+- Targeting notices by department and academic year
+- An urgent or priority flag for important notices
+- Deadlines and event dates on notices
+- Notifications for new notices
+- File attachments such as PDFs
+- Filtering by category
+
+**What we learned:** talking to students first showed that the real problem is scattered channels, not a lack of information. A small system that works end to end is more useful than a large one that does not.
+
+---
+
+## 12. Credits and Third-Party Tools
+
+- XAMPP, PHP, MySQL (open source)
+- FILL: list any templates, libraries, fonts, or AI-assisted tools you used (for example "AI assistant used for drafting documentation and diagrams"). Be honest: the guide requires every member to be able to explain everything in the project.
+
+Licensed under the MIT License (see [`LICENSE`](LICENSE)).
