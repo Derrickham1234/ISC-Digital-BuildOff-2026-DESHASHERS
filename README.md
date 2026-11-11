@@ -13,11 +13,11 @@
 
 | Name | Registration No. | Role |
 |------|------------------|------|
-| Derrick Okoro | [SOKODE2311] | [Backend developer] |
-| [Sharon Umutesi] | [SSHAUM2411] | [Frontend and UX] |
-| [Sheldon Kasera] | [SSHEKA2311] | [ Research, documentation, pitch] |
+| Derrick Okoro | SOKODE2311 | Backend developer |
+| Sharon Umutesi | SSHAUM2411 | Frontend and UX |
+| Sheldon Kasera | SSHEKA2311 |  Research, documentation, pitch |
 
-**Team name:** [DESHASHERS]  **Contact:** [sokode2311@ueab.ac.ke, sshaum2411@ueab.ac.ke, ssheka2311@ueab.ac.ke.]
+**Team name:** DESHASHERS  **Contact:** [sokode2311@ueab.ac.ke, sshaum2411@ueab.ac.ke, ssheka2311@ueab.ac.ke.]
 
 ---
 
@@ -74,9 +74,7 @@ UEAB uses university email, WhatsApp groups, student representatives, lecturers 
 - Prepared SQL statements
 - Protected administrator pages
 
-> **Screenshots:** [Add 3-4 images in a `/screenshots` folder: student dashboard, notice view, admin dashboard, create-notice form.]
 
----
 
 ## 5. Technical Architecture
 
