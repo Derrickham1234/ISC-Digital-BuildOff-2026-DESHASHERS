@@ -21,19 +21,36 @@
 
 ---
 
-## 2. Problem Statement
+## 2. Problem Statement and Research
 
-Notices at UEAB reach students through several scattered channels: physical noticeboards, class announcements, group chats and email. This causes three problems:
+Notices at UEAB reach students through scattered channels: email, WhatsApp
+groups, class representatives, lecturers and physical notice boards. Students
+miss important information, cannot tell which notices apply to them, and
+receive some announcements too late.
 
-1. **Missed information:** students overlook exam changes, deadlines and events.
-2. **Unclear relevance:** students cannot easily tell which notices apply to their department or year.
-3. **Outdated notices:** old notices remain visible and clutter the information that matters.
+### Method
+- Online student survey: **43 responses** (10–11 Nov 2026) across four schools:
+  Business (17), Education, Humanities and Social Sciences (10), Science and
+  Technology (9) and Nursing and Health Sciences (7). Raw anonymised data:
+  `docs/research/survey_responses.csv`
+- Three stakeholder interviews (table below)
 
-UEAB Smart Noticeboard gives the university one searchable place for official announcements.
-## 2. User Research Summary
+### Key survey findings
+- **93%** (40/43) have missed an announcement at least once; **67%** (29/43)
+  miss announcements "sometimes" or "frequently".
+- Only **23%** check university email several times a day; **56%** check it a
+  few times a week or less.
+- **88%** (38/43) attended a physical meeting they felt could have been a
+  digital announcement.
+- **98%** (42/43) said a centralised platform would be useful (74% Yes, 23% Maybe).
+- Most requested features: department-specific notices, urgent highlighting,
+  academic-year targeting, notifications and clear deadlines.
 
-We collected **42 student survey responses** and conducted three campus stakeholder interviews to understand challenges with existing university communication.
 
+### Limitations
+Convenience sample; Business students are over-represented (40%).
+
+### Interviews
 | # | Interviewee | Key Pain Point | Insight |
 |---|---|---|---|
 | 1 | Student, Year 4, School of Business | Important announcements get buried in WhatsApp groups. | Centralize announcements for easier access. |
