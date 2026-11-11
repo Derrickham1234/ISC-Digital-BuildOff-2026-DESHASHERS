@@ -13,11 +13,11 @@
 
 | Name | Registration No. | Role |
 |------|------------------|------|
-| Derrick Okoro | [Reg. No.] | [e.g. Backend developer] |
-| [Sharon Umutesi] | [Reg. No.] | [e.g. Frontend and UX] |
-| [Name] | [Reg. No.] | [e.g. Research, documentation, pitch] |
+| Derrick Okoro | [SOKODE2311] | [Backend developer] |
+| [Sharon Umutesi] | [SSHAUM2411] | [Frontend and UX] |
+| [Sheldon Kasera] | [SSHEKA2311] | [ Research, documentation, pitch] |
 
-**Team name:** [TEAM NAME]  **Contact:** [email / phone]
+**Team name:** [DESHASHERS]  **Contact:** [sokode2311@ueab.ac.ke, sshaum2411@ueab.ac.ke, ssheka2311@ueab.ac.ke.]
 
 ---
 
@@ -30,29 +30,29 @@ Notices at UEAB reach students through several scattered channels: physical noti
 3. **Outdated notices:** old notices remain visible and clutter the information that matters.
 
 UEAB Smart Noticeboard gives the university one searchable place for official announcements.
+## 2. User Research Summary
 
-### User Research Summary
+We collected **42 student survey responses** and conducted three campus stakeholder interviews to understand challenges with existing university communication.
 
-We interviewed three campus users to understand the problem. [REPLACE WITH YOUR REAL INTERVIEWS.]
+| # | Interviewee | Key Pain Point | Insight |
+|---|---|---|---|
+| 1 | Student, Year 4, School of Business | Important announcements get buried in WhatsApp groups. | Centralize announcements for easier access. |
+| 2 | Lecturer / Department Staff | Repeatedly communicating the same information across different channels is time-consuming. | Provide a single platform for publishing and targeting departmental announcements. |
+| 3 | University Administrator | Ensuring important announcements reach their intended audiences can be challenging. | Introduce centralized publishing, targeted distribution and clear notice visibility. |
 
-| # | Interviewee | Key pain point | Insight |
-|---|-------------|----------------|---------|
-| 1 | [Student, Year __, Department] | [What they said] | [What it means for the design] |
-| 2 | [Lecturer / department staff] | [What they said] | [What it means for the design] |
-| 3 | [Admin / Registrar office] | [What they said] | [What it means for the design] |
+**Current Channels and Their Performance:**
 
-**Current channels and how they perform:** [2-3 sentences, e.g. which channels exist, who uses them, where they fail. Include one concrete example of a missed notice.]
+UEAB uses university email, WhatsApp groups, student representatives, lecturers and physical notice boards to communicate announcements. However, information is sometimes overlooked, delayed or scattered across these channels. In our survey, **64.3% of respondents sometimes or frequently miss important announcements**, while **97.6% expressed interest in or openness to a centralized digital platform**.
 
 ---
 
 ## 3. Objectives
 
-- Provide one central platform for university announcements.
-- Let administrators create, edit, delete and publish notices (or save drafts).
-- Let students view and read published notices.
-- Organise notices into categories.
-- Let students search notices by title or content.
-- Improve access to university information.
+1. **Centralize university announcements:** Provide one accessible digital platform for official announcements from different university departments.
+
+2. **Simplify announcement management:** Enable authorized staff to create, categorize, prioritize and manage announcements targeted at specific departments and academic years.
+
+3. **Improve student access to information:** Enable students to view, search and filter relevant announcements while easily identifying urgent and important notices.
 
 ## 4. Key Features
 
