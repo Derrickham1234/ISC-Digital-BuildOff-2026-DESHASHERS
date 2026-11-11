@@ -6,7 +6,7 @@
 **Team:** DESHASHERS
 **Status:** Working prototype
 **Repository:** https://github.com/Derrickham1234/ISC-Digital-BuildOff-2026-DESHASHERS
-**Live demo / demo video:** FILL: paste a link, or delete this line
+**Live demo / demo video:** FILL: live_demo.mp4
 
 ---
 

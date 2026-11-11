@@ -1,0 +1,265 @@
+/* UEAB Smart Noticeboard - main stylesheet */
+
+:root {
+    --navy: #1F3A5F;
+    --navy-dark: #16304f;
+    --amber: #F2A900;
+    --bg: #F4F7FB;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #d8e0ea;
+    --panel: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+}
+
+/* Main page box */
+.container {
+    max-width: 1000px;
+    margin: 16px auto;
+    padding: 28px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(31, 58, 95, 0.12);
+}
+
+/* Banner title */
+h1 {
+    text-align: center;
+    color: #fff;
+    background: var(--navy);
+    margin: -28px -28px 24px;
+    padding: 22px 16px;
+    border-radius: 14px 14px 0 0;
+    border-bottom: 4px solid var(--amber);
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+}
+
+h2, h3 {
+    color: var(--navy);
+}
+
+h2 {
+    margin-top: 8px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+small {
+    color: var(--muted);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 22px 0;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Login and register box */
+.form-container {
+    max-width: 460px;
+    margin: 20px auto;
+    padding: 24px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 14px 0 6px;
+    color: var(--navy);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.15);
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 16px;
+}
+
+button,
+input[type="submit"] {
+    background: var(--navy);
+    color: #fff;
+    border: 0;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: var(--navy-dark);
+}
+
+/* Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--amber);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    margin: 0 0 6px;
+}
+
+.card h3 a {
+    color: var(--navy);
+}
+
+.dashboard-cards .card h3 {
+    font-size: 0.95rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.dashboard-cards .card h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--navy);
+}
+
+/* Tables (manage notices) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.95rem;
+}
+
+th {
+    background: var(--navy);
+    color: #fff;
+    text-align: left;
+    padding: 10px 12px;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+tr:nth-child(even) td {
+    background: var(--panel);
+}
+
+/* Phones and small screens */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    h1 {
+        margin: -18px -18px 18px;
+        font-size: 1.3rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+/* Password eye icon */
+.password-wrap {
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 46px;
+}
+
+.password-wrap .eye-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    padding: 6px;
+    cursor: pointer;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.password-wrap .eye-btn:hover {
+    background: none;
+    color: var(--navy);
+}
+
+.password-wrap .eye-btn svg {
+    width: 22px;
+    height: 22px;
+}
