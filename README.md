@@ -180,6 +180,7 @@ Based on the survey, next we would build:
 ## 12. Credits and Third-Party Tools
 
 - XAMPP, PHP, MySQL (open source)
-- FILL: list any templates, libraries, fonts, or AI-assisted tools you used (for example "AI assistant used for drafting documentation and diagrams"). Be honest: the guide requires every member to be able to explain everything in the project.
+- FILL: - AI assistant (Claude) was used to help with documentation, diagrams and the business model. All code and content were reviewed by the team.
 
+- 
 Licensed under the MIT License (see [`LICENSE`](LICENSE)).
